@@ -1,0 +1,30 @@
+.signai-logos {
+  aspect-ratio: 4.6;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.signai-logos .subtract {
+  height: 90.17%;
+  left: 80.41%;
+  position: absolute;
+  top: 0;
+  width: 19.59%;
+}
+
+.signai-logos .sign-AI {
+  height: 97.68%;
+  left: 0;
+  position: absolute;
+  top: 2.32%;
+  width: 75.02%;
+}
+
+.signai-logos.signai-white {
+  left: 0;
+}
+
+.signai-logos.signai-orange {
+  left: 0;
+}
