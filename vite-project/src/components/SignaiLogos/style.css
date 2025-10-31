@@ -1,6 +1,8 @@
 .signai-logos {
   aspect-ratio: 4.6;
-  /* Modificado: 'height: auto' para que 'aspect-ratio' funcione correctamente */
+  /* MODIFICADO: 'height: auto' para que 'aspect-ratio' funcione 
+    correctamente junto con el 'width' (que ahora es '100%').
+  */
   height: auto;
   position: relative;
   width: 100%;

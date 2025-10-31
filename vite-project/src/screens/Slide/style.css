@@ -8,7 +8,7 @@
 
 .slide .rectangle {
   background-color: #060045;
-  height: 39.38vw;
+  height: 39.38rem;
   left: 0;
   position: absolute;
   top: 0;
@@ -17,52 +17,49 @@
 
 .slide .div {
   background-color: #dddddd;
-  height: 214.9vw;
+  min-height: 214.9rem;
   left: 0;
   position: absolute;
-  top: 39.38vw;
+  top: 39.38rem;
   width: 100%;
 }
 
 .slide .text-wrapper {
   color: #1000a9;
   font-family: "Inter", Helvetica;
-  /* Modificado: Usamos clamp para controlar el tamaño de fuente y 'em' para letter-spacing */
-  font-size: clamp(2rem, 4.58vw, 4.2rem);
+  font-size: 4.58rem;
   font-weight: 600;
-  left: 12.55vw;
-  letter-spacing: -0.05em;
+  left: 12.55rem;
+  letter-spacing: -0.05em; 
   line-height: normal;
   position: absolute;
-  top: 52.76vw;
-  width: 25.1vw;
+  top: 52.76rem;
+  width: 25.1rem;
 }
 
 .slide .me-llamo-borja {
   color: #000000;
   font-family: "Inter", Helvetica;
-  /* Modificado: Usamos clamp para controlar el tamaño de fuente y 'em' para letter-spacing */
-  font-size: clamp(1rem, 1.67vw, 1.5rem);
+  font-size: 1.67rem;
   font-weight: 400;
-  left: 12.55vw;
+  left: 12.55rem;
   letter-spacing: -0.02em;
   line-height: normal;
   position: absolute;
-  top: 59.58vw;
-  width: 25.1vw;
+  top: 59.58rem;
+  width: 25.1rem;
 }
 
 .slide .clubes-teded {
   color: transparent;
   font-family: "Inter", Helvetica;
-  /* Modificado: Usamos clamp para controlar el tamaño de fuente */
-  font-size: clamp(2rem, 4.58vw, 4.2rem);
+  font-size: 4.58rem;
   font-weight: 400;
-  left: 11.35vw;
+  left: 11.35rem;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
-  top: 160.36vw;
+  top: 160.36rem;
 }
 
 .slide .span {
@@ -88,176 +85,167 @@
 .slide .a-lo-largo-del-a-o {
   color: #000000;
   font-family: "Inter", Helvetica;
-  /* Modificado: Usamos clamp para controlar el tamaño de fuente */
-  font-size: clamp(1rem, 1.67vw, 1.5rem);
+  font-size: 1.67rem;
   font-weight: 400;
-  left: 11.35vw;
+  left: 11.35rem;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
-  top: 167.34vw;
-  width: 31.41vw;
+  top: 167.34rem;
+  width: 31.41rem;
 }
 
 .slide .group {
-  height: 48.85vw;
-  left: 56.61vw;
+  height: 48.85rem;
+  left: 56.61rem;
   position: absolute;
-  top: 37.71vw;
-  width: 42.71vw;
+  top: 37.71rem;
+  width: 42.71rem;
 }
 
 .slide .eclipse {
   background: linear-gradient(180deg, rgba(0, 194, 255, 0) 0%, rgba(255, 41, 195, 1) 100%);
-  border-radius: 21.35vw;
-  filter: blur(5.21vw);
-  height: 42.71vw;
+  border-radius: 21.35rem;
+  filter: blur(5.21rem);
+  height: 42.71rem;
   left: 0;
   position: absolute;
   top: 0;
-  width: 42.71vw;
+  width: 42.71rem;
 }
 
 .slide .rectangle-2 {
   background: linear-gradient(180deg, rgba(24, 75, 255, 0) 0%, rgba(23, 74, 255, 1) 100%);
-  filter: blur(5.21vw);
-  height: 29.11vw;
-  left: 11.09vw;
+  filter: blur(5.21rem);
+  height: 29.11rem;
+  left: 11.09rem;
   position: absolute;
-  top: 19.74vw;
-  width: 20.52vw;
+  top: 19.74rem;
+  width: 20.52rem;
 }
 
 .slide .photos {
   aspect-ratio: 1;
-  height: 30vw;
-  left: 56.61vw;
+  height: 30rem;
+  left: 56.61rem;
   position: absolute;
-  top: 50.26vw;
-  width: 30vw;
+  top: 50.26rem;
+  width: 30rem;
 }
 
 .slide .rectangle-3 {
   background-color: #2276a5;
-  height: 35.47vw;
+  height: 35.47rem;
   left: 0;
   position: absolute;
-  top: 218.8vw;
-  width: 50vw;
+  top: 218.8rem;
+  width: 50rem;
 }
 
 .slide .juego-interactivo-de {
   color: #ffffff;
   font-family: "Inter", Helvetica;
-  /* Modificado: Usamos clamp para controlar el tamaño de fuente */
-  font-size: clamp(0.9rem, 1.25vw, 1.15rem);
+  font-size: 1.25rem;
   font-weight: 400;
-  left: 5.73vw;
+  left: 5.73rem;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
   text-align: center;
-  top: 236.25vw;
-  width: 38.59vw;
+  top: 236.25rem;
+  width: 38.59rem;
 }
 
 .slide .logos {
-  height: 6.04vw;
-  left: 13.85vw;
+  height: 6.04rem;
+  left: 13.85rem;
   position: absolute;
-  top: 227.97vw;
-  width: 22.4vw;
+  top: 227.97rem;
+  width: 22.4rem;
 }
 
 .slide .rectangle-4 {
   background-color: #ff7a00;
-  height: 35.47vw;
-  left: 50vw;
+  height: 35.47rem;
+  left: 50rem;
   position: absolute;
-  top: 218.8vw;
-  width: 50vw;
+  top: 218.8rem;
+  width: 50rem;
 }
 
 .slide .line {
-  height: 37.34vw;
+  height: 37.34rem;
   left: 0;
   position: absolute;
-  top: 10.88vw;
+  top: 10.88rem;
   width: 100%;
 }
 
 .slide .img {
-  height: 37.34vw;
+  height: 37.34rem;
   left: 0;
   position: absolute;
-  top: 172.97vw;
+  top: 172.97rem;
   width: 100%;
 }
 
 .slide .hola-soy-borja-dise {
   color: transparent;
   font-family: "Inter", Helvetica;
-  /* Modificado: Usamos clamp para controlar el tamaño de fuente y 'em' para letter-spacing */
-  font-size: clamp(2rem, 4.58vw, 4.2rem);
+  font-size: 4.58rem;
   font-weight: 600;
-  left: 5.26vw;
+  left: 5.26rem;
   letter-spacing: -0.05em;
   line-height: normal;
   position: absolute;
-  top: 16.98vw;
+  top: 16.98rem;
 }
 
 .slide .text-wrapper-5 {
   color: #ffffff;
-  /* Modificado: Eliminamos el letter-spacing fijo en px para que herede el 'em' */
-  /* letter-spacing: -4.65px; */
 }
 
 .slide .text-wrapper-6 {
   color: #00faff;
-  /* Modificado: Eliminamos el letter-spacing fijo en px para que herede el 'em' */
-  /* letter-spacing: -4.65px; */
 }
 
 .slide .p {
   color: #ffffff;
   font-family: "Inter", Helvetica;
-  /* Modificado: Usamos clamp para controlar el tamaño de fuente y 'em' para letter-spacing */
-  font-size: clamp(1rem, 1.88vw, 1.7rem);
+  font-size: 1.88rem;
   font-weight: 400;
-  left: 5.26vw;
+  left: 5.26rem;
   letter-spacing: -0.02em;
   line-height: normal;
   position: absolute;
-  top: 29.58vw;
-  width: 39.69vw;
+  top: 29.58rem;
+  width: 39.69rem;
 }
 
 .slide .signai-logos-instance {
-  /* Modificado: Usamos clamp para el ancho y 'auto' para el alto para mantener la proporción */
-  width: clamp(10rem, 20.83vw, 19rem) !important;
-  height: auto !important;
-  left: 64.63vw !important;
+  width: 20.83rem !important;
+  height: auto !important; /* Mantenemos 'auto' por 'aspect-ratio' */
+  left: 64.63rem !important;
   position: absolute !important;
-  top: 227.08vw !important;
+  top: 227.08rem !important;
 }
 
 .slide .IMG {
   aspect-ratio: 1.01;
-  height: 31.88vw;
-  left: 56.67vw;
+  height: 31.88rem;
+  left: 56.67rem;
   object-fit: cover;
   position: absolute;
-  top: 157.08vw;
-  width: 32.03vw;
+  top: 157.08rem;
+  width: 32.03rem;
 }
 
 .slide .rectangle-5 {
   background-color: #060045;
-  height: 11.82vw;
+  height: 11.82rem;
   left: 0;
   position: absolute;
-  top: 206.98vw;
+  top: 206.98rem;
   width: 100%;
 }
 
@@ -265,20 +253,18 @@
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  /* Modificado: Usamos clamp para el espaciado */
-  gap: clamp(1rem, 2.24vw, 2rem);
-  left: 40.47vw;
+  gap: 2.24rem;
+  left: 40.47rem;
   position: absolute;
-  top: 107.03vw;
-  width: 49.27vw;
+  top: 107.03rem;
+  width: 49.27rem;
 }
 
 .slide .discurso-en-p-blico {
   align-self: stretch;
   color: transparent;
   font-family: "Inter", Helvetica;
-  /* Modificado: Usamos clamp para controlar el tamaño de fuente */
-  font-size: clamp(1.1rem, 2.08vw, 1.9rem);
+  font-size: 2.08rem;
   font-weight: 400;
   letter-spacing: 0;
   line-height: normal;
@@ -299,8 +285,7 @@
   align-self: stretch;
   color: transparent;
   font-family: "Inter", Helvetica;
-  /* Modificado: Usamos clamp para controlar el tamaño de fuente */
-  font-size: clamp(1.1rem, 2.08vw, 1.9rem);
+  font-size: 2.08rem;
   font-weight: 400;
   letter-spacing: 0;
   line-height: normal;
@@ -308,46 +293,44 @@
 }
 
 .slide .mask-group {
-  height: 24.17vw;
-  left: 10.31vw;
+  height: 24.17rem;
+  left: 10.31rem;
   position: absolute;
-  top: 105.94vw;
-  width: 23.85vw;
+  top: 105.94rem;
+  width: 23.85rem;
 }
 
 .slide .text-wrapper-9 {
   color: #ffffff;
   font-family: "Inter", Helvetica;
-  /* Modificado: Usamos clamp para controlar el tamaño de fuente */
-  font-size: clamp(1.25rem, 2.6vw, 2.35rem);
+  font-size: 2.6rem;
   font-weight: 700;
-  left: 13.49vw;
+  left: 13.49rem;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
-  top: 120.05vw;
-  width: 15.1vw;
+  top: 120.05rem;
+  width: 15.1rem;
 }
 
 .slide .group-2 {
-  height: 2.86vw;
+  height: 2.86rem;
   left: 0;
   position: absolute;
-  top: 215.94vw;
+  top: 215.94rem;
   width: 100%;
 }
 
 .slide .text-wrapper-10 {
   color: #79fcff;
   font-family: "Inter", Helvetica;
-  /* Modificado: Usamos clamp para controlar el tamaño de fuente */
-  font-size: clamp(1.5rem, 3.44vw, 3.1rem);
+  font-size: 3.44rem;
   font-weight: 600;
-  left: 3.8vw;
+  left: 3.8rem;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
-  top: 210.83vw;
+  top: 210.83rem;
 }
 
 .slide .vector {
@@ -377,76 +360,72 @@
 .slide .traductor-de-lengua {
   color: #ffffff;
   font-family: "Inter", Helvetica;
-  /* Modificado: Usamos clamp para controlar el tamaño de fuente */
-  font-size: clamp(0.9rem, 1.25vw, 1.15rem);
+  font-size: 1.25rem;
   font-weight: 400;
-  left: 55.73vw;
+  left: 55.73rem;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
   text-align: center;
-  top: 234.38vw;
-  width: 38.59vw;
+  top: 234.38rem;
+  width: 38.59rem;
 }
 
 .slide .signai-logos-wrapper {
   align-items: center;
   display: inline-flex;
-  /* Modificado: Usamos clamp para el espaciado */
-  gap: clamp(20rem, 54.63vw, 50rem);
-  left: 5.83vw;
+  gap: 54.63rem;
+  left: 5.83rem;
   position: absolute;
-  top: 260.83vw;
+  top: 260.83rem;
 }
 
 .slide .signai-logos-2 {
   aspect-ratio: 4.6;
-  /* Modificado: Usamos clamp para la altura */
-  height: clamp(1rem, 2.24vw, 2rem);
+  height: 2.24rem;
   position: relative;
-  width: 10.31vw;
+  width: 10.31rem;
 }
 
 .slide .line-2 {
-  height: 0.05vw;
-  left: 44.32vw;
+  height: 0.05rem;
+  left: 44.32rem;
   object-fit: cover;
   position: absolute;
-  top: 268.65vw;
-  width: 11.46vw;
+  top: 268.65rem;
+  width: 11.46rem;
 }
 
 .slide .text-wrapper-11 {
   color: #909090;
   font-family: "Inter", Helvetica;
-  /* Modificado: Usamos clamp para controlar el tamaño de fuente y 'em' para letter-spacing */
-  font-size: clamp(0.7rem, 0.83vw, 0.85rem);
+  font-size: 0.83rem;
   font-weight: 400;
-  left: 40.99vw;
+  left: 40.99rem;
   letter-spacing: -0.01em;
   line-height: normal;
   position: absolute;
-  top: 270.16vw;
+  top: 270.16rem;
   white-space: nowrap;
 }
 
 .slide .frame-2 {
-  height: 2.4vw;
-  left: 45.47vw;
+  height: 2.4rem;
+  left: 45.47rem;
   position: absolute;
-  top: 263.75vw;
-  width: 9.17vw;
+  top: 263.75rem;
+  width: 9.17rem;
 }
 
 .slide .text-wrapper-12 {
   color: #bababa;
   font-family: "Inter", Helvetica;
-  /* Modificado: Usamos clamp para controlar el tamaño de fuente */
-  font-size: clamp(1.5rem, 3.28vw, 3rem);
+  font-size: 3.28rem;
   font-weight: 700;
-  left: 42.55vw;
+  left: 42.55rem;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
-  top: 258.65vw;
+  top: 258.65rem;
 }
+
