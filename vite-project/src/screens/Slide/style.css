@@ -27,10 +27,11 @@
 .slide .text-wrapper {
   color: #1000a9;
   font-family: "Inter", Helvetica;
-  font-size: 4.58vw;
+  /* Modificado: Usamos clamp para controlar el tamaño de fuente y 'em' para letter-spacing */
+  font-size: clamp(2rem, 4.58vw, 4.2rem);
   font-weight: 600;
   left: 12.55vw;
-  letter-spacing: -0.275vw;
+  letter-spacing: -0.05em;
   line-height: normal;
   position: absolute;
   top: 52.76vw;
@@ -40,10 +41,11 @@
 .slide .me-llamo-borja {
   color: #000000;
   font-family: "Inter", Helvetica;
-  font-size: 1.67vw;
+  /* Modificado: Usamos clamp para controlar el tamaño de fuente y 'em' para letter-spacing */
+  font-size: clamp(1rem, 1.67vw, 1.5rem);
   font-weight: 400;
   left: 12.55vw;
-  letter-spacing: -0.1vw;
+  letter-spacing: -0.02em;
   line-height: normal;
   position: absolute;
   top: 59.58vw;
@@ -53,7 +55,8 @@
 .slide .clubes-teded {
   color: transparent;
   font-family: "Inter", Helvetica;
-  font-size: 4.58vw;
+  /* Modificado: Usamos clamp para controlar el tamaño de fuente */
+  font-size: clamp(2rem, 4.58vw, 4.2rem);
   font-weight: 400;
   left: 11.35vw;
   letter-spacing: 0;
@@ -85,7 +88,8 @@
 .slide .a-lo-largo-del-a-o {
   color: #000000;
   font-family: "Inter", Helvetica;
-  font-size: 1.67vw;
+  /* Modificado: Usamos clamp para controlar el tamaño de fuente */
+  font-size: clamp(1rem, 1.67vw, 1.5rem);
   font-weight: 400;
   left: 11.35vw;
   letter-spacing: 0;
@@ -145,7 +149,8 @@
 .slide .juego-interactivo-de {
   color: #ffffff;
   font-family: "Inter", Helvetica;
-  font-size: 1.25vw;
+  /* Modificado: Usamos clamp para controlar el tamaño de fuente */
+  font-size: clamp(0.9rem, 1.25vw, 1.15rem);
   font-weight: 400;
   left: 5.73vw;
   letter-spacing: 0;
@@ -192,10 +197,11 @@
 .slide .hola-soy-borja-dise {
   color: transparent;
   font-family: "Inter", Helvetica;
-  font-size: 4.58vw;
+  /* Modificado: Usamos clamp para controlar el tamaño de fuente y 'em' para letter-spacing */
+  font-size: clamp(2rem, 4.58vw, 4.2rem);
   font-weight: 600;
   left: 5.26vw;
-  letter-spacing: -0.275vw;
+  letter-spacing: -0.05em;
   line-height: normal;
   position: absolute;
   top: 16.98vw;
@@ -203,21 +209,24 @@
 
 .slide .text-wrapper-5 {
   color: #ffffff;
-  letter-spacing: -4.65px;
+  /* Modificado: Eliminamos el letter-spacing fijo en px para que herede el 'em' */
+  /* letter-spacing: -4.65px; */
 }
 
 .slide .text-wrapper-6 {
   color: #00faff;
-  letter-spacing: -4.65px;
+  /* Modificado: Eliminamos el letter-spacing fijo en px para que herede el 'em' */
+  /* letter-spacing: -4.65px; */
 }
 
 .slide .p {
   color: #ffffff;
   font-family: "Inter", Helvetica;
-  font-size: 1.88vw;
+  /* Modificado: Usamos clamp para controlar el tamaño de fuente y 'em' para letter-spacing */
+  font-size: clamp(1rem, 1.88vw, 1.7rem);
   font-weight: 400;
   left: 5.26vw;
-  letter-spacing: -0.11vw;
+  letter-spacing: -0.02em;
   line-height: normal;
   position: absolute;
   top: 29.58vw;
@@ -225,11 +234,12 @@
 }
 
 .slide .signai-logos-instance {
-  height: 4.53vw !important;
+  /* Modificado: Usamos clamp para el ancho y 'auto' para el alto para mantener la proporción */
+  width: clamp(10rem, 20.83vw, 19rem) !important;
+  height: auto !important;
   left: 64.63vw !important;
   position: absolute !important;
   top: 227.08vw !important;
-  width: 20.83vw !important;
 }
 
 .slide .IMG {
@@ -255,7 +265,8 @@
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  gap: 2.24vw;
+  /* Modificado: Usamos clamp para el espaciado */
+  gap: clamp(1rem, 2.24vw, 2rem);
   left: 40.47vw;
   position: absolute;
   top: 107.03vw;
@@ -266,7 +277,8 @@
   align-self: stretch;
   color: transparent;
   font-family: "Inter", Helvetica;
-  font-size: 2.08vw;
+  /* Modificado: Usamos clamp para controlar el tamaño de fuente */
+  font-size: clamp(1.1rem, 2.08vw, 1.9rem);
   font-weight: 400;
   letter-spacing: 0;
   line-height: normal;
@@ -287,7 +299,8 @@
   align-self: stretch;
   color: transparent;
   font-family: "Inter", Helvetica;
-  font-size: 2.08vw;
+  /* Modificado: Usamos clamp para controlar el tamaño de fuente */
+  font-size: clamp(1.1rem, 2.08vw, 1.9rem);
   font-weight: 400;
   letter-spacing: 0;
   line-height: normal;
@@ -305,7 +318,8 @@
 .slide .text-wrapper-9 {
   color: #ffffff;
   font-family: "Inter", Helvetica;
-  font-size: 2.6vw;
+  /* Modificado: Usamos clamp para controlar el tamaño de fuente */
+  font-size: clamp(1.25rem, 2.6vw, 2.35rem);
   font-weight: 700;
   left: 13.49vw;
   letter-spacing: 0;
@@ -326,7 +340,8 @@
 .slide .text-wrapper-10 {
   color: #79fcff;
   font-family: "Inter", Helvetica;
-  font-size: 3.44vw;
+  /* Modificado: Usamos clamp para controlar el tamaño de fuente */
+  font-size: clamp(1.5rem, 3.44vw, 3.1rem);
   font-weight: 600;
   left: 3.8vw;
   letter-spacing: 0;
@@ -362,7 +377,8 @@
 .slide .traductor-de-lengua {
   color: #ffffff;
   font-family: "Inter", Helvetica;
-  font-size: 1.25vw;
+  /* Modificado: Usamos clamp para controlar el tamaño de fuente */
+  font-size: clamp(0.9rem, 1.25vw, 1.15rem);
   font-weight: 400;
   left: 55.73vw;
   letter-spacing: 0;
@@ -376,7 +392,8 @@
 .slide .signai-logos-wrapper {
   align-items: center;
   display: inline-flex;
-  gap: 54.63vw;
+  /* Modificado: Usamos clamp para el espaciado */
+  gap: clamp(20rem, 54.63vw, 50rem);
   left: 5.83vw;
   position: absolute;
   top: 260.83vw;
@@ -384,7 +401,8 @@
 
 .slide .signai-logos-2 {
   aspect-ratio: 4.6;
-  height: 2.24vw;
+  /* Modificado: Usamos clamp para la altura */
+  height: clamp(1rem, 2.24vw, 2rem);
   position: relative;
   width: 10.31vw;
 }
@@ -401,10 +419,11 @@
 .slide .text-wrapper-11 {
   color: #909090;
   font-family: "Inter", Helvetica;
-  font-size: 0.83vw;
+  /* Modificado: Usamos clamp para controlar el tamaño de fuente y 'em' para letter-spacing */
+  font-size: clamp(0.7rem, 0.83vw, 0.85rem);
   font-weight: 400;
   left: 40.99vw;
-  letter-spacing: -0.067vw;
+  letter-spacing: -0.01em;
   line-height: normal;
   position: absolute;
   top: 270.16vw;
@@ -422,7 +441,8 @@
 .slide .text-wrapper-12 {
   color: #bababa;
   font-family: "Inter", Helvetica;
-  font-size: 3.28vw;
+  /* Modificado: Usamos clamp para controlar el tamaño de fuente */
+  font-size: clamp(1.5rem, 3.28vw, 3rem);
   font-weight: 700;
   left: 42.55vw;
   letter-spacing: 0;
