@@ -1,0 +1,220 @@
+.frame {
+  background-color: #f1f1f1;
+  height: 1080px;
+  position: relative;
+  width: 1920px;
+}
+
+.frame .text-wrapper {
+  color: #aa00cc;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 96px;
+  font-weight: 600;
+  left: 63px;
+  letter-spacing: -5.76px;
+  line-height: normal;
+  position: absolute;
+  top: 184px;
+  width: 744px;
+}
+
+.frame .div {
+  align-items: flex-start;
+  background: linear-gradient(
+    81deg,
+    rgba(72, 1, 101, 1) 0%,
+    rgba(205, 0, 202, 1) 100%
+  );
+  border-radius: 41px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  height: 234px;
+  left: 49px;
+  padding: 25px 24px;
+  position: absolute;
+  top: 385px;
+  width: 570px;
+}
+
+.frame .text-wrapper-2 {
+  color: #d3a8ff;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  width: 472px;
+}
+
+.frame .p {
+  align-self: stretch;
+  color: #ffffff;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  height: 87px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+}
+
+.frame .rectangle {
+  background: linear-gradient(
+    90deg,
+    rgba(47, 0, 66, 1) 0%,
+    rgba(171, 0, 205, 1) 100%
+  );
+  height: 4px;
+  margin-bottom: -1.00px;
+  position: relative;
+  width: 514px;
+}
+
+.frame .div-2 {
+  align-items: flex-start;
+  background: linear-gradient(
+    81deg,
+    rgba(72, 1, 101, 1) 0%,
+    rgba(205, 0, 202, 1) 100%
+  );
+  border-radius: 41px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  height: 234px;
+  left: 674px;
+  padding: 25px 24px;
+  position: absolute;
+  top: 385px;
+  width: 570px;
+}
+
+.frame .div-3 {
+  align-items: flex-start;
+  background: linear-gradient(
+    81deg,
+    rgba(72, 1, 101, 1) 0%,
+    rgba(205, 0, 202, 1) 100%
+  );
+  border-radius: 41px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  height: 234px;
+  left: 1299px;
+  padding: 25px 24px;
+  position: absolute;
+  top: 637px;
+  width: 573px;
+}
+
+.frame .div-4 {
+  align-items: flex-start;
+  background: linear-gradient(
+    81deg,
+    rgba(72, 1, 101, 1) 0%,
+    rgba(205, 0, 202, 1) 100%
+  );
+  border-radius: 41px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  height: 234px;
+  left: 1299px;
+  padding: 25px 24px;
+  position: absolute;
+  top: 385px;
+  width: 570px;
+}
+
+.frame .div-5 {
+  align-items: flex-start;
+  background: linear-gradient(
+    81deg,
+    rgba(72, 1, 101, 1) 0%,
+    rgba(205, 0, 202, 1) 100%
+  );
+  border-radius: 41px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  height: 234px;
+  left: 49px;
+  overflow: hidden;
+  padding: 25px 24px;
+  position: absolute;
+  top: 638px;
+  width: 570px;
+}
+
+.frame .text-wrapper-3 {
+  align-self: stretch;
+  color: #d3a8ff;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+}
+
+.frame .text-wrapper-4 {
+  color: #ffffff;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 22px;
+  font-weight: 400;
+  height: 86px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-right: -24.00px;
+  position: relative;
+  width: 546px;
+}
+
+.frame .rectangle-2 {
+  background: linear-gradient(
+    90deg,
+    rgba(47, 0, 66, 1) 0%,
+    rgba(171, 0, 205, 1) 100%
+  );
+  height: 4px;
+  position: relative;
+  width: 514px;
+}
+
+.frame .div-6 {
+  align-items: flex-start;
+  background: linear-gradient(
+    81deg,
+    rgba(72, 1, 101, 1) 0%,
+    rgba(205, 0, 202, 1) 100%
+  );
+  border-radius: 41px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  height: 234px;
+  left: 674px;
+  overflow: hidden;
+  padding: 25px 24px;
+  position: absolute;
+  top: 638px;
+  width: 570px;
+}
+
+.frame .text-wrapper-5 {
+  color: #ffffff;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  height: 86px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-right: -24.00px;
+  position: relative;
+  width: 546px;
+}

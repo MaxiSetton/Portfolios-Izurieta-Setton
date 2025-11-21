@@ -1,0 +1,113 @@
+.frame {
+  background-image: url(./graident-2.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 1084px;
+  position: relative;
+  width: 1920px;
+}
+
+.frame .hola-soy-maximiliano {
+  color: transparent;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 88px;
+  font-weight: 600;
+  left: 131px;
+  letter-spacing: -5.28px;
+  line-height: normal;
+  position: absolute;
+  top: 477px;
+}
+
+.frame .text-wrapper {
+  color: #ffffff;
+  letter-spacing: -4.65px;
+}
+
+.frame .span {
+  color: #aa00cc;
+  letter-spacing: -4.65px;
+}
+
+.frame .div {
+  color: #ffffff;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 36px;
+  font-weight: 400;
+  left: 131px;
+  letter-spacing: -2.16px;
+  line-height: normal;
+  position: absolute;
+  top: 719px;
+  width: 762px;
+}
+
+.frame .navbar {
+  align-items: center;
+  display: inline-flex;
+  gap: 129px;
+  left: 418px;
+  position: absolute;
+  top: 73px;
+}
+
+.frame .text-wrapper-2 {
+  color: #ffffff;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.frame .group {
+  height: 828px;
+  left: 1172px;
+  position: absolute;
+  top: 117px;
+  width: 746px;
+}
+
+.frame .eclipse {
+  background: linear-gradient(180deg, rgba(47, 0, 66, 1) 1%, rgba(171, 0, 205, 1) 100%);
+  border-radius: 373px/361.92px;
+  filter: blur(100px);
+  height: 724px;
+  left: 0;
+  position: absolute;
+  top: 1px;
+  width: 746px;
+}
+
+.frame .rectangle {
+  background: linear-gradient(180deg, rgba(24, 75, 255, 0) 0%, rgba(205, 0, 202, 1) 100%);
+  filter: blur(100px);
+  height: 493px;
+  left: 194px;
+  position: absolute;
+  top: 335px;
+  width: 358px;
+}
+
+.frame .rectangle-2 {
+  background-color: #1000a9;
+  filter: blur(127.15px);
+  height: 293px;
+  left: 345px;
+  position: absolute;
+  top: 155px;
+  transform: rotate(-33.93deg);
+  width: 316px;
+}
+
+.frame .photos-instance {
+  background-image: url(./image.png) !important;
+  height: 576px !important;
+  left: 1228px !important;
+  position: absolute !important;
+  top: 276px !important;
+  width: 576px !important;
+}
