@@ -1,11 +1,11 @@
-.frame {
+.hago {
   background-color: #f1f1f1;
   height: 1080px;
   position: relative;
   width: 1920px;
 }
 
-.frame .text-wrapper {
+.hago .text-wrapper {
   color: #aa00cc;
   font-family: "Inter-SemiBold", Helvetica;
   font-size: 96px;
@@ -18,7 +18,7 @@
   width: 744px;
 }
 
-.frame .div {
+.hago .div {
   align-items: flex-start;
   background: linear-gradient(
     81deg,
@@ -37,7 +37,7 @@
   width: 570px;
 }
 
-.frame .text-wrapper-2 {
+.hago .text-wrapper-2 {
   color: #d3a8ff;
   font-family: "Inter-SemiBold", Helvetica;
   font-size: 36px;
@@ -49,7 +49,7 @@
   width: 472px;
 }
 
-.frame .p {
+.hago .p {
   align-self: stretch;
   color: #ffffff;
   font-family: "Inter-Regular", Helvetica;
@@ -61,7 +61,7 @@
   position: relative;
 }
 
-.frame .rectangle {
+.hago .rectangle {
   background: linear-gradient(
     90deg,
     rgba(47, 0, 66, 1) 0%,
@@ -73,7 +73,7 @@
   width: 514px;
 }
 
-.frame .div-2 {
+.hago .div-2 {
   align-items: flex-start;
   background: linear-gradient(
     81deg,
@@ -92,7 +92,7 @@
   width: 570px;
 }
 
-.frame .div-3 {
+.hago .div-3 {
   align-items: flex-start;
   background: linear-gradient(
     81deg,
@@ -111,7 +111,7 @@
   width: 573px;
 }
 
-.frame .div-4 {
+.hago .div-4 {
   align-items: flex-start;
   background: linear-gradient(
     81deg,
@@ -130,7 +130,7 @@
   width: 570px;
 }
 
-.frame .div-5 {
+.hago .div-5 {
   align-items: flex-start;
   background: linear-gradient(
     81deg,
@@ -150,7 +150,7 @@
   width: 570px;
 }
 
-.frame .text-wrapper-3 {
+.hago .text-wrapper-3 {
   align-self: stretch;
   color: #d3a8ff;
   font-family: "Inter-SemiBold", Helvetica;
@@ -162,7 +162,7 @@
   position: relative;
 }
 
-.frame .text-wrapper-4 {
+.hago .text-wrapper-4 {
   color: #ffffff;
   font-family: "Inter-Regular", Helvetica;
   font-size: 22px;
@@ -175,7 +175,7 @@
   width: 546px;
 }
 
-.frame .rectangle-2 {
+.hago .rectangle-2 {
   background: linear-gradient(
     90deg,
     rgba(47, 0, 66, 1) 0%,
@@ -186,7 +186,7 @@
   width: 514px;
 }
 
-.frame .div-6 {
+.hago .div-6 {
   align-items: flex-start;
   background: linear-gradient(
     81deg,
@@ -206,7 +206,7 @@
   width: 570px;
 }
 
-.frame .text-wrapper-5 {
+.hago .text-wrapper-5 {
   color: #ffffff;
   font-family: "Inter-Regular", Helvetica;
   font-size: 24px;

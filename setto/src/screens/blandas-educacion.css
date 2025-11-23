@@ -1,0 +1,371 @@
+.group-72-1-parent {
+    width: 100%;
+    /* Cambiado de height fijo a min-height para que crezca si el contenido lo empuja */
+    min-height: 2160px; 
+    position: relative;
+    background-color: #f2f2f2;
+    overflow-x: hidden; /* Evitar scroll horizontal, permitir vertical */
+    text-align: center;
+    font-size: 32px;
+    color: #2f0042;
+    font-family: Inter, sans-serif;
+}
+
+/* --- CLASES NUEVAS PARA LAS TARJETAS (Habilidades Blandas) --- */
+
+/* Contenedor que ubica la grilla en el lugar correcto sin posición absoluta rígida */
+.cards-section-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-top: 550px;
+    margin-bottom: 150px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 294px);
+    gap: 45px;                 /* 👈 más separación horizontal y vertical */
+    justify-content: center;
+    width: fit-content;        /* 👈 clave para centrado perfecto */
+    margin: 0 auto;            /* doble seguridad */
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 294px);
+    }
+}
+/* La tarjeta maestra: Define tamaño, borde y forma */
+.skill-card {
+    width: 294px;  /* Ancho original */
+    height: 245px; /* Alto original */
+    border-radius: 35px;
+    border: 4px solid #2f0042; /* Borde violeta */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.skill-icon-container {
+    width: 95px;
+    height: 95px;
+    margin-bottom: 16px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	flex-direction: column;
+}
+
+.skill-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.skill-title {
+    font-size: 24px; /* text-xl/2xl */
+    font-weight: 700;
+    color: #2f0042;
+    text-align: center;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0 10px;
+}
+
+/* --- FIN CLASES NUEVAS --- */
+
+/* Manteniendo el resto de tu CSS para el fondo y textos superiores */
+
+.group-72-1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 1343px;
+    object-fit: cover;
+}
+
+/* Contenedor principal para la cabecera: centrado y flexible */
+.header-container {
+  position: absolute;
+  top: 90px; /* ajustá si querés moverlo verticalmente */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1700px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* izquierda / divider / derecha */
+  gap: 40px;
+  box-sizing: border-box;
+  /* z-index: 20; */
+}
+
+/* IZQUIERDA: "No sólo un" + "programador" (stack vertical) */
+.header-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 320px; /* evita colapso; ajustá si querés */
+}
+
+/* Reutiliza tu estilo de programador pero SIN position absolute */
+.programador {
+  position: relative;    /* override del absolute antiguo */
+  margin: 0;
+  font-size: 140px;  
+  background: linear-gradient(90deg, #2f0042, #1100a9);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* "No sólo un" pequeño encima del programador */
+.no-slo-un {
+  position: relative;
+  line-height: 0.45;
+  font-size: 140px;
+  color: #2F0042;
+  display: inline-block;
+}
+
+/* DIVIDER vertical */
+.header-divider {
+  width: 5px;
+  height: 180px; /* ajustá a la altura del texto */
+  background: linear-gradient(180deg, rgba(47,0,66,0.15), rgba(17,0,169,0.12));
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+/* DERECHA: titular gris y subtitulo */
+.header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  max-width: 700px;
+}
+
+/* Titular grande (antes .un-lder-no) */
+.un-lder-no {
+  position: relative; /* override absolute antiguo */
+  font-size: 80px;
+  color: #4a4a4a;
+  margin: 0 0 12px 0;
+  line-height: 1.05;
+}
+
+/* Subtítulo (antes .mis-habilidades-blandas-container) */
+.mis-habilidades-blandas-container {
+  position: relative;
+  font-size: 35px;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* RESPONSIVE: apila verticalmente en pantallas chicas */
+@media (max-width: 900px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    top: 70px;
+  }
+  .header-left, .header-right {
+    align-items: center;
+    text-align: center;
+    min-width: 0;
+    max-width: 90%;
+  }
+  .header-divider {
+    width: 80%;
+    height: 1px;
+    background: rgba(47,0,66,0.12);
+    margin: 6px 0;
+  }
+  .programador { font-size: 64px; }
+  .un-lder-no { font-size: 28px; }
+}
+
+.education-section {
+		font-family: 'Inter', sans-serif; /* Asumiendo una fuente similar */
+		padding: 50px 20px;
+		overflow: hidden;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.mi-educacion {
+		font-size: 100px; /* Ajustado para responsividad, original 96px era muy grande */
+		letter-spacing: -0.06em;
+		font-weight: 600;
+		color: #ab00cd;
+		margin-bottom: 60px;
+		text-align: left;
+		width: 100%;
+		max-width: 1400px;
+		padding-left: 20px;
+	}
+
+	/* --- CONTENEDOR DEL SLIDER --- */
+	.carousel-wrapper {
+		position: relative;
+		width: 100%;
+		max-width: 1400px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.carousel-track-container {
+		overflow: hidden; /* Oculta los elementos que se salen */
+		width: 100%;
+		padding: 20px 0;
+	}
+
+	.carousel-track {
+		display: flex;
+		gap: 70px; /* Tu gap original */
+		transition: transform 0.5s ease-in-out;
+		width: fit-content;
+	}
+
+	/* --- BOTONES DE NAVEGACIÓN (Vectores) --- */
+	.nav-button {
+		background: none;
+		border: none;
+		cursor: pointer;
+		padding: 10px;
+		z-index: 10;
+		transition: transform 0.2s;
+		color: #ab00cd; /* Color temático */
+	}
+	
+	.nav-button:hover {
+		transform: scale(1.2);
+	}
+
+	.nav-icon {
+		width: 30px;
+		height: 80px; /* Similar a tu altura de 68px */
+	}
+
+	/* --- TARJETAS (Componentes hijos) --- */
+	.card-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 11px;
+		flex-shrink: 0; /* Evita que se aplasten */
+		width: 30%; /* Ancho base para consistencia */
+		text-align: center;
+		color: #6d6c6c;
+		justify-content: center;
+	}
+
+	.honor-card {
+		width: 40%; /* La del medio es más ancha según tu diseño */
+	}
+
+	/* Textos */
+	.card-title {
+		font-size: 28px;
+		color: #6d6c6c;
+	}
+
+	.card-subtitle {
+		font-size: 23px;
+	}
+
+	.card-subtitle-large {
+		font-size: 32px;
+	}
+	
+	.card-text-block {
+		font-size: 23px;
+		line-height: 1.2;
+	}
+
+	/* --- IMÁGENES --- */
+	
+	/* Tipo 1: Egresado normal */
+	.image-wrapper-standard img {
+		width: 300px;
+		height: 300px;
+		border-radius: 194px; /* Tu border radius */
+		object-fit: cover;
+	}
+
+	/* Tipo 2: Honores (Grande) */
+	.image-wrapper-large img {
+		width: 100%;
+		height: 400px;
+		border-radius: 332px;
+		object-fit: cover;
+	}
+
+	/* Tipo 3: Futuro (Con elipse y borde) */
+	.ellipse-parent {
+		width: 300px;
+		height: 300px;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.group-child {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		background-color: #fff;
+		border: 3px solid #d9d9d9;
+		box-sizing: border-box;
+		z-index: 1;
+	}
+
+	.image-inset {
+		height: 100%;
+		object-fit: cover;
+		z-index: 2;
+		position: relative;
+		border-radius: 20px; /* Suavizar bordes de la imagen interna */
+	}
+
+	/* --- RESPONSIVIDAD --- */
+	@media (max-width: 1024px) {
+		.mi-educacion { font-size: 48px; text-align: center; padding: 0; }
+		.carousel-track { gap: 30px; }
+		.honor-card { width: 350px; } /* Normalizar tamaños en tablets */
+		.image-wrapper-large img { height: 300px; }
+	}
+
+	@media (max-width: 768px) {
+		.mi-educacion { text-align: center; }
+		.carousel-wrapper { flex-direction: column; gap: 20px; }
+		.nav-button { display: none; /* En móvil, confiamos en el scroll horizontal */ }
+		/* En móvil, permitimos scroll nativo horizontal para mejor UX */
+		.carousel-track-container { overflow-x: auto; scroll-snap-type: x mandatory; }
+		.carousel-track { width: max-content; }
+		.card-container { scroll-snap-align: center; }
+	}

@@ -1,10 +1,9 @@
 import React from "react";
-import { Photos } from "./Photos";
 import "./intro.css";
 
-export const Frame = () => {
+export const Intro = () => {
   return (
-    <div className="frame">
+    <div className="intro">
       <p className="hola-soy-maximiliano">
         <span className="text-wrapper">
           Hola, soy Maximiliano
@@ -36,7 +35,7 @@ export const Frame = () => {
         <div className="rectangle-2" />
       </div>
 
-      <Photos className="photos-instance" property1="masi" />
+      <img src="/foto_maxi.png" className="photos-instance" alt="intro" />
     </div>
   );
 };

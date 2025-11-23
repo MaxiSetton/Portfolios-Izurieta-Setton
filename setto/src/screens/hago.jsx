@@ -1,9 +1,9 @@
 import React from "react";
 import "./hago.css";
 
-export const Frame = () => {
+export const Hago = () => {
   return (
-    <div className="frame">
+    <div className="hago">
       <div className="text-wrapper">Lo que hago</div>
 
       <div className="div">

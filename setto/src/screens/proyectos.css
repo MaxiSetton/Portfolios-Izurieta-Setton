@@ -1,0 +1,202 @@
+.rectangle-parent {
+  	width: 100%;
+  	position: relative;
+  	text-align: left;
+  	font-size: 40px;
+  	color: #000;
+  	font-family: Inter;
+}
+.frame-child {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background-color: #d9d9d9;
+  	flex-shrink: 0;
+}
+.group-67-1 {
+  	position: absolute;
+  	width: 100%;
+  	object-fit: cover;
+  	flex-shrink: 0;
+}
+.rectangle-group {
+  	position: absolute;
+  	top: 745px;
+  	left: 179px;
+  	width: 1566px;
+  	height: 353px;
+  	flex-shrink: 0;
+}
+.group-child {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 35px;
+  	background-color: #fff;
+  	width: 1566px;
+  	height: 353px;
+    z-index: 0;
+    display: flex;
+}
+.pastillero-inteligente-para {
+  	position: absolute;
+  	top: 90px;
+  	left: 790px;
+  	display: inline-block;
+  	width: 719px;
+}
+.mis-proyectos {
+  	position: absolute;
+  	top: 141.74px;
+  	left: 1382px;
+  	font-size: 65.99px;
+  	color: #fff4e4;
+  	flex-shrink: 0;
+}
+.maximiliano-eithan-setton {
+  	position: absolute;
+  	top: 1549.74px;
+  	left: 746px;
+  	font-size: 16px;
+  	letter-spacing: -0.08em;
+  	color: #fff;
+  	flex-shrink: 0;
+}
+.frame-item {
+  	position: absolute;
+  	top: 1522.24px;
+  	left: 851.5px;
+  	background-color: #fff;
+  	border-top: 1px solid #fff;
+  	box-sizing: border-box;
+  	width: 221px;
+  	height: 1px;
+  	flex-shrink: 0;
+}
+.vector-parent {
+  	position: absolute;
+  	top: 1429.74px;
+  	left: 874px;
+  	display: flex;
+  	align-items: flex-start;
+  	gap: 18px;
+  	flex-shrink: 0;
+}
+.vector-icon {
+  	height: 44px;
+  	width: 44px;
+  	position: relative;
+}
+.vector-icon2 {
+  	height: 42px;
+  	width: 51px;
+  	position: relative;
+}
+.group-icon {
+  	height: 42.2px;
+  	width: 43.8px;
+  	position: relative;
+}
+.contacto {
+  	position: absolute;
+  	top: 1329.74px;
+  	left: 818px;
+  	font-size: 62.87px;
+  	color: #fff;
+  	flex-shrink: 0;
+}
+.group-parent {
+  	position: absolute;
+  	top: 306px;
+  	left: 179px;
+  	width: 1566px;
+  	height: 755px;
+  	flex-shrink: 0;     
+}
+.rectangle-container {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 1566px;
+  	height: 755px;
+    z-index: 0;
+}
+.traductor-de-lengua {
+  	position: absolute;
+  	top: 81px;
+  	left: 790px;
+  	display: inline-block;
+  	width: 719px;
+    z-index: 2;
+}
+.group-inner {
+  	position: absolute;
+  	top: 35px;
+  	left: 716px;
+  	border-top: 6px solid #ff7a00;
+  	box-sizing: border-box;
+  	width: 284px;
+  	height: 6px;
+  	transform:  rotate(90.2deg);
+  	transform-origin: 0 0;
+    z-index: 3;
+}
+.line-div {
+  	position: absolute;
+  	top: 474px;
+  	left: 716px;
+  	border-top: 6px solid #3201bf;
+  	box-sizing: border-box;
+  	width: 284px;
+  	height: 6px;
+  	transform:  rotate(90.2deg);
+  	transform-origin: 0 0;
+    z-index: 3;
+}
+.signai-1-parent {
+  	position: absolute;
+  	top: 51px;
+  	left: 58px;
+  	width: 586px;
+  	height: 252px;
+  	font-size: 20px;
+  	color: #3c3c3c;
+}
+.signai-1-icon {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 40px;
+  	width: 586px;
+  	height: 252px;
+  	object-fit: cover;
+}
+.signaiar-parent {
+  	position: absolute;
+  	top: 222px;
+  	left: 459px;
+  	width: 106px;
+  	height: 24px;
+}
+.signaiar {
+  	position: absolute;
+  	top: 0px;
+  	left: 26px;
+}
+.link-icon {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 24px;
+  	height: 24px;
+}
+.component-4-1 {
+  	position: absolute;
+  	top: 838px;
+  	left: 273px;
+  	width: 515px;
+  	height: 175px;
+  	object-fit: cover;
+  	flex-shrink: 0;
+}
+

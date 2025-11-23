@@ -1,11 +1,10 @@
 import React from "react";
-import a650111 from "./42a6501-1-1.png";
 import "./sobre_mi.css";
 
-export const Frame = () => {
+export const Sobre_mi = () => {
   return (
     <div className="frame">
-      <img className="element" alt="Element" src={a650111} />
+      <img className="element" alt="Element" src="conferencia.jpg" />
 
       <div className="text-wrapper">Sobre mí</div>
 
