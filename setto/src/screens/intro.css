@@ -1,112 +1,95 @@
+/* --- ESTILOS BASE (Desktop / Pantalla Grande) --- */
 .intro {
   background-color: black;
-  background-image: url(./graident-2.png);
   background-position: 50% 50%;
   background-size: cover;
-  height: 1084px;
+  height: 100vh;
   position: relative;
   width: 100%;
+  overflow: hidden; /* Importante para que las blobs no generen scroll horizontal */
 }
-
-.hola-soy-maximiliano {
-  color: transparent;
-  font-family: "Inter-SemiBold", Helvetica;
-  font-size: 88px;
-  font-weight: 600;
-  left: 131px;
-  letter-spacing: -5.28px;
-  line-height: normal;
+.text{
+  width: 55%;
+  left: 5vw;
+  bottom: 15vh;
+  display: flex;
   position: absolute;
-  top: 477px;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.hola-soy-maximiliano {
+  color: #ffffff;
+  font-family: "Inter-SemiBold", Helvetica, sans-serif;
+  font-size: 8vh;
+  font-weight: 600;
+  letter-spacing: -4px;
+  line-height: 1.1;
+  z-index: 10;
+  margin: 0;
 }
 
-.text-wrapper {
+.text-hola {
   color: #ffffff;
-  letter-spacing: -4.65px;
+  letter-spacing: -4px;
 }
 
 .span {
   color: #aa00cc;
-  letter-spacing: -4.65px;
+  letter-spacing: -4px;
 }
 
-.div {
+/* Subtítulo */
+.aqui-muestro {
   color: #ffffff;
-  font-family: "Inter-Regular", Helvetica;
-  font-size: 36px;
+  font-family: "Inter-Regular", Helvetica, sans-serif;
+  font-size: 2.5vh;
   font-weight: 400;
   left: 131px;
-  letter-spacing: -2.16px;
   line-height: normal;
-  position: absolute;
-  top: 719px;
-  width: 762px;
+  max-width: 45vw;
+  z-index: 10;
 }
 
+/* Menú de Navegación */
 .navbar {
   align-items: center;
   display: inline-flex;
-  gap: 129px;
-  left: 418px;
+  gap: 90px;
+  position-area: bottom;
   position: absolute;
-  top: 73px;
+  top: 40px;
+  z-index: 20;
 }
 
-.text-wrapper-2 {
+.text-navbar {
   color: #ffffff;
-  font-family: "Inter-Regular", Helvetica;
-  font-size: 36px;
+  font-family: "Inter-Regular", Helvetica, sans-serif;
+  font-size: 2.5vh;
   font-weight: 400;
   letter-spacing: 0;
   line-height: normal;
-  margin-top: -1px;
-  position: relative;
-  width: fit-content;
+  cursor: pointer;
 }
 
+/* --- FONDO Y BLOBS (Grupo de efectos) --- */
+.foto{
+  position: absolute;
+  right: 0;
+  width: clamp(200px, 45%, 1200px);
+  display: flex;
+}
 .group {
-  height: 828px;
-  left: 1172px;
-  position: absolute;
-  top: 117px;
-  width: 746px;
-}
-
-.eclipse {
-  background: linear-gradient(180deg, rgba(47, 0, 66, 1) 1%, rgba(171, 0, 205, 1) 100%);
-  border-radius: 373px/361.92px;
-  filter: blur(100px);
-  height: 724px;
-  left: 0;
-  position: absolute;
-  top: 1px;
-  width: 746px;
-}
-
-.rectangle {
-  background: linear-gradient(180deg, rgba(24, 75, 255, 0) 0%, rgba(205, 0, 202, 1) 100%);
-  filter: blur(100px);
-  height: 493px;
-  left: 194px;
-  position: absolute;
-  top: 335px;
-  width: 358px;
-}
-.rectangle-2 {
-  background-color: #1000a9;
-  filter: blur(127.15px);
-  height: 293px;
-  left: 345px;
-  position: absolute;
-  top: 155px;
-  transform: rotate(-33.93deg);
-  width: 316px;
+  right: 0;
+  width: 100%;
+  pointer-events: none; /* Para que no tape los clicks */
+  z-index: 1;
 }
 
 .photos-instance {
-  height: 576px !important;
-  left: 1228px !important;
-  position: absolute !important;
-  top: 276px !important;
-  width: 576px !important;
+    height: auto;
+    width: 65%;
+    right: 5%;
+    top: 20%;
+    z-index: 5;
+    position: absolute;
 }

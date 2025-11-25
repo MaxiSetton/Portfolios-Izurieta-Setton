@@ -1,51 +1,65 @@
 .group-72-1-parent {
     width: 100%;
-    /* Cambiado de height fijo a min-height para que crezca si el contenido lo empuja */
-    min-height: 2160px; 
+    height: 210vh; 
     position: relative;
     background-color: #f2f2f2;
     overflow-x: hidden; /* Evitar scroll horizontal, permitir vertical */
     text-align: center;
-    font-size: 32px;
     color: #2f0042;
     font-family: Inter, sans-serif;
+	display: flex;
+	flex-direction: column;
+}
+.header-container {
+    position: relative; /* Cambio clave: de absolute a relative */
+    margin-top: 4%;   /* Usamos margin en vez de top */
+    margin-bottom: 40px; /* ESTO genera el espacio extra que pediste antes de las cards */
+    
+    /* El resto queda igual */
+    left: auto;
+    transform: none;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 40px;
+    box-sizing: border-box;
 }
 
-/* --- CLASES NUEVAS PARA LAS TARJETAS (Habilidades Blandas) --- */
+/* --- CAMBIOS EN LA SECCIÓN DE TARJETAS --- */
 
-/* Contenedor que ubica la grilla en el lugar correcto sin posición absoluta rígida */
 .cards-section-container {
     width: 100%;
     margin: 0 auto;
     padding: 0 20px;
-    margin-top: 550px;
-    margin-bottom: 150px;
-
+    /* Eliminamos el margin-top porcentual conflictivo, 
+       ahora el espacio lo controla el margin-bottom del header */
     display: flex;
     justify-content: center;
+    position: relative;
+    box-sizing: border-box;
 }
 
 .cards-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 294px);
-    gap: 45px;                 /* 👈 más separación horizontal y vertical */
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    width: fit-content;        /* 👈 clave para centrado perfecto */
-    margin: 0 auto;            /* doble seguridad */
+    gap:  6vh 6% ;
+    width: clamp(300px, 75%, 950px);     
 }
 
-/* Responsive */
-@media (max-width: 1024px) {
-    .cards-grid {
-        grid-template-columns: repeat(2, 294px);
-    }
-}
-/* La tarjeta maestra: Define tamaño, borde y forma */
+
+/* La tarjeta se mantiene igual, solo aseguramos que no se achique */
 .skill-card {
-    width: 294px;  /* Ancho original */
-    height: 245px; /* Alto original */
+    width: 21vh;
+    height: 20vh;
+    flex-shrink: 0; /* Evita que se aplasten si falta espacio */
     border-radius: 35px;
-    border: 4px solid #2f0042; /* Borde violeta */
+    border: 4px solid #2f0042;
+    background-color: #d9d9d9; /* Color base por si falla el prop */
+    /* ... resto de tus estilos ... */
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -56,8 +70,8 @@
 }
 
 .skill-icon-container {
-    width: 95px;
-    height: 95px;
+    width: 8vh;
+    height: 18vh20px;
     margin-bottom: 16px;
     margin-top: 10px;
     display: flex;
@@ -73,42 +87,30 @@
 }
 
 .skill-title {
-    font-size: 24px; /* text-xl/2xl */
-    font-weight: 700;
+    font-size: 2vh; /* text-xl/2xl */
+    font-weight: 650;
     color: #2f0042;
     text-align: center;
     line-height: 1.2;
     margin: 0;
+	margin-top: 5%;
     padding: 0 10px;
 }
 
 /* --- FIN CLASES NUEVAS --- */
 
 /* Manteniendo el resto de tu CSS para el fondo y textos superiores */
-
+.blandas{
+	height: 110vh;
+	width: 100vw;
+}
 .group-72-1 {
     position: absolute;
     top: 0px;
     left: 0px;
-    width: 100%;
-    height: 1343px;
     object-fit: cover;
-}
-
-/* Contenedor principal para la cabecera: centrado y flexible */
-.header-container {
-  position: absolute;
-  top: 90px; /* ajustá si querés moverlo verticalmente */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
-  max-width: 1700px;
-  display: flex;
-  align-items: center;
-  justify-content: center; /* izquierda / divider / derecha */
-  gap: 40px;
-  box-sizing: border-box;
-  /* z-index: 20; */
+    margin-bottom: 20%;
+    width: 100%;
 }
 
 /* IZQUIERDA: "No sólo un" + "programador" (stack vertical) */
@@ -117,14 +119,13 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  min-width: 320px; /* evita colapso; ajustá si querés */
 }
 
 /* Reutiliza tu estilo de programador pero SIN position absolute */
 .programador {
   position: relative;    /* override del absolute antiguo */
   margin: 0;
-  font-size: 140px;  
+  font-size: 10vh;  
   background: linear-gradient(90deg, #2f0042, #1100a9);
   background-clip: text;
   -webkit-background-clip: text;
@@ -136,18 +137,17 @@
 .no-slo-un {
   position: relative;
   line-height: 0.45;
-  font-size: 140px;
+  font-size: 10vh;
   color: #2F0042;
   display: inline-block;
 }
 
-/* DIVIDER vertical */
 .header-divider {
-  width: 5px;
-  height: 180px; /* ajustá a la altura del texto */
-  background: linear-gradient(180deg, rgba(47,0,66,0.15), rgba(17,0,169,0.12));
-  border-radius: 4px;
-  flex-shrink: 0;
+    width: 10px;
+    height: 300px;
+    background: linear-gradient(180deg, rgba(47, 0, 66, 0.8), rgb(72 63 154 / 70%));
+    border-radius: 4px;
+	margin:0 5%;
 }
 
 /* DERECHA: titular gris y subtitulo */
@@ -157,13 +157,13 @@
   align-items: flex-start;
   justify-content: center;
   text-align: left;
-  max-width: 700px;
+  width: 34%;
 }
 
 /* Titular grande (antes .un-lder-no) */
 .un-lder-no {
   position: relative; /* override absolute antiguo */
-  font-size: 80px;
+  font-size: 5.3vh;
   color: #4a4a4a;
   margin: 0 0 12px 0;
   line-height: 1.05;
@@ -172,39 +172,17 @@
 /* Subtítulo (antes .mis-habilidades-blandas-container) */
 .mis-habilidades-blandas-container {
   position: relative;
-  font-size: 35px;
+  font-size: 3vh;
   color: #333;
   line-height: 1.4;
+  margin-top: 2%;
 }
 
-/* RESPONSIVE: apila verticalmente en pantallas chicas */
-@media (max-width: 900px) {
-  .header-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 18px;
-    top: 70px;
-  }
-  .header-left, .header-right {
-    align-items: center;
-    text-align: center;
-    min-width: 0;
-    max-width: 90%;
-  }
-  .header-divider {
-    width: 80%;
-    height: 1px;
-    background: rgba(47,0,66,0.12);
-    margin: 6px 0;
-  }
-  .programador { font-size: 64px; }
-  .un-lder-no { font-size: 28px; }
-}
 
 .education-section {
-		font-family: 'Inter', sans-serif; /* Asumiendo una fuente similar */
-		padding: 50px 20px;
-		overflow: hidden;
+		height: 100vh;
+		width: 100vw;
+		font-family: 'Inter', sans-serif;
 		position: relative;
 		display: flex;
 		flex-direction: column;
@@ -213,38 +191,53 @@
 	}
 
 	.mi-educacion {
-		font-size: 100px; /* Ajustado para responsividad, original 96px era muy grande */
+		font-size: 6vh; /* Ajustado para responsividad, original 96px era muy grande */
 		letter-spacing: -0.06em;
 		font-weight: 600;
 		color: #ab00cd;
-		margin-bottom: 60px;
 		text-align: left;
-		width: 100%;
-		max-width: 1400px;
-		padding-left: 20px;
+		width: 90%;
+		max-width: 1000px;
 	}
 
 	/* --- CONTENEDOR DEL SLIDER --- */
 	.carousel-wrapper {
 		position: relative;
-		width: 100%;
-		max-width: 1400px;
+		width: 90%;
+		max-width: 1000px;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		margin-bottom: 10vh;
+		max-height: 1000px;
+		gap:20px;
 	}
 
 	.carousel-track-container {
-		overflow: hidden; /* Oculta los elementos que se salen */
-		width: 100%;
 		padding: 20px 0;
 	}
 
 	.carousel-track {
+    display: flex;
+    width: 100%;       /* Ocupa todo el contenedor */
+    justify-content: center;
+    align-items: center; /* Alinea verticalmente al centro */
+	}
+
+
+	.card-container {
+		/* Quitamos anchos fijos porcentuales conflictivos */
+		width: 100%; 
+		/* El resto queda igual */
 		display: flex;
-		gap: 70px; /* Tu gap original */
-		transition: transform 0.5s ease-in-out;
-		width: fit-content;
+		flex-direction: column;
+		align-items: center;
+		gap: 11px;
+	}
+
+	.honor-card {
+		/* Quitamos width fijo porque lo maneja el anim-wrapper */
+		width: 100%;
 	}
 
 	/* --- BOTONES DE NAVEGACIÓN (Vectores) --- */
@@ -267,105 +260,73 @@
 		height: 80px; /* Similar a tu altura de 68px */
 	}
 
-	/* --- TARJETAS (Componentes hijos) --- */
-	.card-container {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 11px;
-		flex-shrink: 0; /* Evita que se aplasten */
-		width: 30%; /* Ancho base para consistencia */
-		text-align: center;
-		color: #6d6c6c;
-		justify-content: center;
-	}
-
-	.honor-card {
-		width: 40%; /* La del medio es más ancha según tu diseño */
-	}
 
 	/* Textos */
 	.card-title {
-		font-size: 28px;
-		color: #6d6c6c;
+		font-size: 22px;
+		color: #333;
+		font-weight: 550;
+		    max-width: 80%;
 	}
-
+	.honor-card .card-title {
+    font-size: 33px;   /* ¡Mucho más grande! */
+    color: #333;    /* Opcional: Un color más fuerte (violeta oscuro) para destacar */
+    margin-bottom: 4px;
+	font-weight: 700;
+	    max-width: 80%;
+	}
 	.card-subtitle {
-		font-size: 23px;
+		font-size: 18px;
+		color: #4a4a4a;
+		    max-width: 80%;
 	}
 
 	.card-subtitle-large {
-		font-size: 32px;
+		font-size: 25px;
+		color: #4a4a4a;
+		    max-width: 80%;
 	}
 	
 	.card-text-block {
-		font-size: 23px;
+		font-size: 18px;
 		line-height: 1.2;
+		    max-width: 80%;
 	}
 
 	/* --- IMÁGENES --- */
 	
 	/* Tipo 1: Egresado normal */
 	.image-wrapper-standard img {
-		width: 300px;
-		height: 300px;
+		width: 20vw;
+		max-width: 200px;
 		border-radius: 194px; /* Tu border radius */
 		object-fit: cover;
 	}
 
 	/* Tipo 2: Honores (Grande) */
 	.image-wrapper-large img {
-		width: 100%;
-		height: 400px;
+		width: 30vw;
+		max-width: 350px;
 		border-radius: 332px;
 		object-fit: cover;
 	}
 
 	/* Tipo 3: Futuro (Con elipse y borde) */
 	.ellipse-parent {
-		width: 300px;
-		height: 300px;
 		position: relative;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 	}
 
-	.group-child {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		border-radius: 50%;
-		background-color: #fff;
-		border: 3px solid #d9d9d9;
-		box-sizing: border-box;
-		z-index: 1;
-	}
+	
 
 	.image-inset {
-		height: 100%;
+		width: 20vw;
+		max-width: 200px;
 		object-fit: cover;
 		z-index: 2;
 		position: relative;
-		border-radius: 20px; /* Suavizar bordes de la imagen interna */
 	}
 
-	/* --- RESPONSIVIDAD --- */
-	@media (max-width: 1024px) {
-		.mi-educacion { font-size: 48px; text-align: center; padding: 0; }
-		.carousel-track { gap: 30px; }
-		.honor-card { width: 350px; } /* Normalizar tamaños en tablets */
-		.image-wrapper-large img { height: 300px; }
-	}
-
-	@media (max-width: 768px) {
-		.mi-educacion { text-align: center; }
-		.carousel-wrapper { flex-direction: column; gap: 20px; }
-		.nav-button { display: none; /* En móvil, confiamos en el scroll horizontal */ }
-		/* En móvil, permitimos scroll nativo horizontal para mejor UX */
-		.carousel-track-container { overflow-x: auto; scroll-snap-type: x mandatory; }
-		.carousel-track { width: max-content; }
-		.card-container { scroll-snap-align: center; }
-	}
+	

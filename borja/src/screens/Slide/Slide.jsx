@@ -1,6 +1,21 @@
 import React from "react";
 import { SignaiLogos } from "../../components/SignaiLogos";
 import "./style.css";
+import borjaImg from "../../assets/borja.png";
+import line3 from "../../assets/Line-3.png"
+import line4 from "../../assets/Line-4.png"
+import reflex_master from "../../assets/reflex_master.png"
+import Ted from "../../assets/TED.png"
+import signai from "../../assets/SignAI.png"
+import vector from "../../assets/vector.png"
+import line1 from "../../assets/Line-1.png"
+import substract from "../../assets/Substract.png"
+import group from "../../assets/Group.png"
+import igIcon from "../../assets/ig.svg";
+import mailIcon from "../../assets/mail.svg";
+import lkdnIcon from "../../assets/lkdn.svg";
+
+import maskgroup from "../../assets/Mask-group.png"
 
 export const Slide = () => {
   return (
@@ -48,8 +63,7 @@ export const Slide = () => {
 
       <img
         className="photos"
-        alt="Photos"
-        src="https://c.animaapp.com/w835WOil/img/photos.svg"
+        src={borjaImg}
       />
 
       <div className="rectangle-3" />
@@ -67,7 +81,7 @@ export const Slide = () => {
       <img
         className="logos"
         alt="Logos"
-        src="https://c.animaapp.com/w835WOil/img/logos3-1@2x.png"
+        src={reflex_master}
       />
 
       <div className="rectangle-4" />
@@ -75,13 +89,13 @@ export const Slide = () => {
       <img
         className="line"
         alt="Line"
-        src="https://c.animaapp.com/w835WOil/img/line-3.png"
+        src={line3}
       />
 
       <img
         className="img"
         alt="Line"
-        src="https://c.animaapp.com/w835WOil/img/line-4.png"
+        src={line4}
       />
 
       <p className="hola-soy-borja-dise">
@@ -98,13 +112,13 @@ export const Slide = () => {
       <SignaiLogos
         className="signai-logos-instance"
         property1="signai-white"
-        signAi="https://c.animaapp.com/w835WOil/img/signai-2.svg"
-        subtract="https://c.animaapp.com/w835WOil/img/subtract-2.svg"
+        signAi={signai}
+        subtract={substract}
       />
       <img
         className="IMG"
         alt="Img"
-        src="https://c.animaapp.com/w835WOil/img/img-6311-1.png"
+        src={Ted}
       />
 
       <div className="rectangle-5" />
@@ -139,7 +153,7 @@ export const Slide = () => {
       <img
         className="mask-group"
         alt="Mask group"
-        src="https://c.animaapp.com/w835WOil/img/mask-group@2x.png"
+        src={maskgroup}
       />
 
       <div className="text-wrapper-9">Habilidades Técnicas.</div>
@@ -147,7 +161,7 @@ export const Slide = () => {
       <img
         className="group-2"
         alt="Group"
-        src="https://c.animaapp.com/w835WOil/img/group.png"
+        src={group}
       />
 
       <div className="text-wrapper-10">Mis Proyectos.</div>
@@ -155,19 +169,19 @@ export const Slide = () => {
       <img
         className="vector"
         alt="Vector"
-        src="https://c.animaapp.com/w835WOil/img/vector.svg"
+        src={vector}
       />
 
       <img
         className="vector-2"
         alt="Vector"
-        src="https://c.animaapp.com/w835WOil/img/vector-1.svg"
+        src={vector}
       />
 
       <img
         className="vector-3"
         alt="Vector"
-        src="https://c.animaapp.com/w835WOil/img/vector-2.svg"
+        src={vector}
       />
 
       <p className="traductor-de-lengua">
@@ -190,18 +204,39 @@ export const Slide = () => {
       <img
         className="line-2"
         alt="Line"
-        src="https://c.animaapp.com/w835WOil/img/line-1.svg"
+        src={line1}
       />
 
       <p className="text-wrapper-11">
         © 2025 Borja Izurieta. Todos los derechos reservados.
       </p>
 
-      <img
-        className="frame-2"
-        alt="Frame"
-        src="https://c.animaapp.com/w835WOil/img/frame-113.svg"
-      />
+      <div className="social-links-container">
+        <a 
+          href="https://instagram.com/borja.izu" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="social-link"
+        >
+          <img src={igIcon} alt="Instagram" />
+        </a>
+        
+        <a 
+          href="mailto:borja.izurieta" 
+          className="social-link"
+        >
+          <img src={mailIcon} alt="Email" />
+        </a>
+        
+        <a 
+          href="https://www.linkedin.com/in/borja-izurieta-a7b46b341/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="social-link"
+        >
+          <img src={lkdnIcon} alt="LinkedIn" />
+        </a>
+      </div>
 
       <div className="text-wrapper-12">Contacto</div>
     </div>

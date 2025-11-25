@@ -1,52 +1,55 @@
 .frame {
-  background-color: #f1f1f1;
-  height: 1080px;
+  background-color: #f2f2f2;
+  height: 100vh;
   position: relative;
-  width: 1920px;
+  width: 100vw;
 }
 
 .frame .element {
   aspect-ratio: 0.99;
-  height: 803px;
-  left: 210px;
+  width: clamp(200px, 35%, 1000px);
+  left: 10%;
   position: absolute;
-  top: 204px;
-  width: 796px;
+  top: 50%;
+  transform: translateY(-50%);
 }
-
+.text-sobre-mi{
+    position: absolute;
+    right: 10%;
+    width: 36%;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(50%);
+}
 .frame .text-wrapper {
   color: #aa00cc;
   font-family: "Inter-SemiBold", Helvetica;
-  font-size: 88px;
+  font-size: 6vh;
   font-weight: 600;
-  left: 1090px;
   letter-spacing: -5.28px;
   line-height: normal;
-  position: absolute;
   text-align: right;
-  top: 314px;
-  width: 744px;
+  top: 15%;
 }
 
 .frame .me-llamo-maximiliano {
   color: #000000;
   font-family: "Inter-Regular", Helvetica;
-  font-size: 32px;
+  font-size: 2.5vh;
   font-weight: 400;
-  left: 1090px;
   letter-spacing: -1.92px;
   line-height: normal;
-  position: absolute;
   text-align: right;
-  top: 445px;
-  width: 744px;
 }
 
 .frame .span {
+    color: #000000;
   letter-spacing: -0.61px;
 }
 
 .frame .text-wrapper-2 {
+    color: #000000;
   font-family: "Inter-Bold", Helvetica;
   font-weight: 700;
   letter-spacing: -0.61px;

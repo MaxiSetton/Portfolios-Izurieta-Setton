@@ -1,25 +1,44 @@
-.hago {
+/* Contenedor principal: Fondo y centrado general */
+.hago-container {
   background-color: #f1f1f1;
-  height: 1080px;
-  position: relative;
-  width: 1920px;
+  height: 100vh; /* Ocupa al menos toda la pantalla */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
 }
-
-.hago .text-wrapper {
+.container{
+    width:80%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+/* Título Principal */
+.hago-container .main-title {
   color: #aa00cc;
-  font-family: "Inter-SemiBold", Helvetica;
-  font-size: 96px;
+  font-family: "Inter-SemiBold", Helvetica, sans-serif;
+  font-size: 6vh;
   font-weight: 600;
-  left: 63px;
-  letter-spacing: -5.76px;
-  line-height: normal;
-  position: absolute;
-  top: 184px;
-  width: 744px;
+  letter-spacing: -4px;
+  margin-bottom: 4%; /* Separación con las tarjetas */
+  text-align: left; /* O center si prefieres */
+  width: 100%;
+  max-width: 1400px; /* Alineado con el ancho máximo de la grilla */
 }
 
-.hago .div {
-  align-items: flex-start;
+/* La Grilla (Grid) - Aquí ocurre la magia responsive */
+.knowledge-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    gap: 7% 1.5%;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+/* Estilos de la Tarjeta Individual */
+.hago-card {
   background: linear-gradient(
     81deg,
     rgba(72, 1, 101, 1) 0%,
@@ -28,193 +47,69 @@
   border-radius: 41px;
   display: flex;
   flex-direction: column;
-  gap: 25px;
-  height: 234px;
-  left: 49px;
-  padding: 25px 24px;
-  position: absolute;
-  top: 385px;
-  width: 570px;
+  justify-content: space-between; /* Empuja la linea al fondo */
+  padding: 35px 30px; /* Altura mínima uniforme */
+  transition: transform 0.2s ease; /* Efecto suave al pasar el mouse */
 }
 
-.hago .text-wrapper-2 {
+.hago-card:hover {
+  transform: translateY(-5px); /* Pequeña animación hover */
+}
+
+.hago-container .card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.hago-container .card-title {
   color: #d3a8ff;
-  font-family: "Inter-SemiBold", Helvetica;
-  font-size: 36px;
+  font-family: "Inter-SemiBold", Helvetica, sans-serif;
+  font-size: 3.3vh; /* Ajustado un poco para que entre mejor */
   font-weight: 600;
-  letter-spacing: 0;
-  line-height: normal;
-  margin-top: -1.00px;
-  position: relative;
-  width: 472px;
+  margin: 0;
+  line-height: 1.2;
 }
 
-.hago .p {
-  align-self: stretch;
+.hago-container .card-text {
   color: #ffffff;
-  font-family: "Inter-Regular", Helvetica;
-  font-size: 24px;
+  font-family: "Inter-Regular", Helvetica, sans-serif;
+  font-size: 2vh; /* Un poco más legible */
   font-weight: 400;
-  height: 87px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: relative;
+  line-height: 1.4;
+  margin: 0;
 }
 
-.hago .rectangle {
+/* La línea decorativa al fondo de la tarjeta */
+.card-line {
   background: linear-gradient(
     90deg,
     rgba(47, 0, 66, 1) 0%,
     rgba(171, 0, 205, 1) 100%
   );
   height: 4px;
-  margin-bottom: -1.00px;
-  position: relative;
-  width: 514px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 2px;
 }
 
-.hago .div-2 {
-  align-items: flex-start;
-  background: linear-gradient(
-    81deg,
-    rgba(72, 1, 101, 1) 0%,
-    rgba(205, 0, 202, 1) 100%
-  );
-  border-radius: 41px;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  height: 234px;
-  left: 674px;
-  padding: 25px 24px;
-  position: absolute;
-  top: 385px;
-  width: 570px;
-}
+/* --- Responsive (Media Queries) --- */
 
-.hago .div-3 {
-  align-items: flex-start;
-  background: linear-gradient(
-    81deg,
-    rgba(72, 1, 101, 1) 0%,
-    rgba(205, 0, 202, 1) 100%
-  );
-  border-radius: 41px;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  height: 234px;
-  left: 1299px;
-  padding: 25px 24px;
-  position: absolute;
-  top: 637px;
-  width: 573px;
-}
+/* Ajustes para pantallas medianas y celulares */
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 56px; /* Reducir tamaño de título en celular */
+    letter-spacing: -2px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
 
-.hago .div-4 {
-  align-items: flex-start;
-  background: linear-gradient(
-    81deg,
-    rgba(72, 1, 101, 1) 0%,
-    rgba(205, 0, 202, 1) 100%
-  );
-  border-radius: 41px;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  height: 234px;
-  left: 1299px;
-  padding: 25px 24px;
-  position: absolute;
-  top: 385px;
-  width: 570px;
-}
-
-.hago .div-5 {
-  align-items: flex-start;
-  background: linear-gradient(
-    81deg,
-    rgba(72, 1, 101, 1) 0%,
-    rgba(205, 0, 202, 1) 100%
-  );
-  border-radius: 41px;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  height: 234px;
-  left: 49px;
-  overflow: hidden;
-  padding: 25px 24px;
-  position: absolute;
-  top: 638px;
-  width: 570px;
-}
-
-.hago .text-wrapper-3 {
-  align-self: stretch;
-  color: #d3a8ff;
-  font-family: "Inter-SemiBold", Helvetica;
-  font-size: 36px;
-  font-weight: 600;
-  letter-spacing: 0;
-  line-height: normal;
-  margin-top: -1.00px;
-  position: relative;
-}
-
-.hago .text-wrapper-4 {
-  color: #ffffff;
-  font-family: "Inter-Regular", Helvetica;
-  font-size: 22px;
-  font-weight: 400;
-  height: 86px;
-  letter-spacing: 0;
-  line-height: normal;
-  margin-right: -24.00px;
-  position: relative;
-  width: 546px;
-}
-
-.hago .rectangle-2 {
-  background: linear-gradient(
-    90deg,
-    rgba(47, 0, 66, 1) 0%,
-    rgba(171, 0, 205, 1) 100%
-  );
-  height: 4px;
-  position: relative;
-  width: 514px;
-}
-
-.hago .div-6 {
-  align-items: flex-start;
-  background: linear-gradient(
-    81deg,
-    rgba(72, 1, 101, 1) 0%,
-    rgba(205, 0, 202, 1) 100%
-  );
-  border-radius: 41px;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  height: 234px;
-  left: 674px;
-  overflow: hidden;
-  padding: 25px 24px;
-  position: absolute;
-  top: 638px;
-  width: 570px;
-}
-
-.hago .text-wrapper-5 {
-  color: #ffffff;
-  font-family: "Inter-Regular", Helvetica;
-  font-size: 24px;
-  font-weight: 400;
-  height: 86px;
-  letter-spacing: 0;
-  line-height: normal;
-  margin-right: -24.00px;
-  position: relative;
-  width: 546px;
+  .cards-grid {
+    /* En celulares, permitimos que las tarjetas sean un poco más angostas */
+    grid-template-columns: 1fr; 
+  }
+  
+  .hago-card {
+    min-height: auto; /* Altura flexible en móvil */
+  }
 }

@@ -1,202 +1,216 @@
-.rectangle-parent {
-  	width: 100%;
-  	position: relative;
-  	text-align: left;
-  	font-size: 40px;
-  	color: #000;
-  	font-family: Inter;
-}
-.frame-child {
-  	position: absolute;
-  	top: 0px;
-  	left: 0px;
-  	background-color: #d9d9d9;
-  	flex-shrink: 0;
-}
-.group-67-1 {
-  	position: absolute;
-  	width: 100%;
-  	object-fit: cover;
-  	flex-shrink: 0;
-}
-.rectangle-group {
-  	position: absolute;
-  	top: 745px;
-  	left: 179px;
-  	width: 1566px;
-  	height: 353px;
-  	flex-shrink: 0;
-}
-.group-child {
-  	position: absolute;
-  	top: 0px;
-  	left: 0px;
-  	border-radius: 35px;
-  	background-color: #fff;
-  	width: 1566px;
-  	height: 353px;
-    z-index: 0;
-    display: flex;
-}
-.pastillero-inteligente-para {
-  	position: absolute;
-  	top: 90px;
-  	left: 790px;
-  	display: inline-block;
-  	width: 719px;
-}
-.mis-proyectos {
-  	position: absolute;
-  	top: 141.74px;
-  	left: 1382px;
-  	font-size: 65.99px;
-  	color: #fff4e4;
-  	flex-shrink: 0;
-}
-.maximiliano-eithan-setton {
-  	position: absolute;
-  	top: 1549.74px;
-  	left: 746px;
-  	font-size: 16px;
-  	letter-spacing: -0.08em;
-  	color: #fff;
-  	flex-shrink: 0;
-}
-.frame-item {
-  	position: absolute;
-  	top: 1522.24px;
-  	left: 851.5px;
-  	background-color: #fff;
-  	border-top: 1px solid #fff;
-  	box-sizing: border-box;
-  	width: 221px;
-  	height: 1px;
-  	flex-shrink: 0;
-}
-.vector-parent {
-  	position: absolute;
-  	top: 1429.74px;
-  	left: 874px;
-  	display: flex;
-  	align-items: flex-start;
-  	gap: 18px;
-  	flex-shrink: 0;
-}
-.vector-icon {
-  	height: 44px;
-  	width: 44px;
-  	position: relative;
-}
-.vector-icon2 {
-  	height: 42px;
-  	width: 51px;
-  	position: relative;
-}
-.group-icon {
-  	height: 42.2px;
-  	width: 43.8px;
-  	position: relative;
-}
-.contacto {
-  	position: absolute;
-  	top: 1329.74px;
-  	left: 818px;
-  	font-size: 62.87px;
-  	color: #fff;
-  	flex-shrink: 0;
-}
-.group-parent {
-  	position: absolute;
-  	top: 306px;
-  	left: 179px;
-  	width: 1566px;
-  	height: 755px;
-  	flex-shrink: 0;     
-}
-.rectangle-container {
-  	position: absolute;
-  	top: 0px;
-  	left: 0px;
-  	width: 1566px;
-  	height: 755px;
-    z-index: 0;
-}
-.traductor-de-lengua {
-  	position: absolute;
-  	top: 81px;
-  	left: 790px;
-  	display: inline-block;
-  	width: 719px;
-    z-index: 2;
-}
-.group-inner {
-  	position: absolute;
-  	top: 35px;
-  	left: 716px;
-  	border-top: 6px solid #ff7a00;
-  	box-sizing: border-box;
-  	width: 284px;
-  	height: 6px;
-  	transform:  rotate(90.2deg);
-  	transform-origin: 0 0;
-    z-index: 3;
-}
-.line-div {
-  	position: absolute;
-  	top: 474px;
-  	left: 716px;
-  	border-top: 6px solid #3201bf;
-  	box-sizing: border-box;
-  	width: 284px;
-  	height: 6px;
-  	transform:  rotate(90.2deg);
-  	transform-origin: 0 0;
-    z-index: 3;
-}
-.signai-1-parent {
-  	position: absolute;
-  	top: 51px;
-  	left: 58px;
-  	width: 586px;
-  	height: 252px;
-  	font-size: 20px;
-  	color: #3c3c3c;
-}
-.signai-1-icon {
-  	position: absolute;
-  	top: 0px;
-  	left: 0px;
-  	border-radius: 40px;
-  	width: 586px;
-  	height: 252px;
-  	object-fit: cover;
-}
-.signaiar-parent {
-  	position: absolute;
-  	top: 222px;
-  	left: 459px;
-  	width: 106px;
-  	height: 24px;
-}
-.signaiar {
-  	position: absolute;
-  	top: 0px;
-  	left: 26px;
-}
-.link-icon {
-  	position: absolute;
-  	top: 0px;
-  	left: 0px;
-  	width: 24px;
-  	height: 24px;
-}
-.component-4-1 {
-  	position: absolute;
-  	top: 838px;
-  	left: 273px;
-  	width: 515px;
-  	height: 175px;
-  	object-fit: cover;
-  	flex-shrink: 0;
+/* Configuración General */
+.proyectos-container {
+  width: 100%;
+  min-height: 100vh; /* Permite scroll si es necesario */
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5vh; /* Espacio vertical entre elementos */
+  padding-bottom: 10vh;
 }
 
+.gradient-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.proyectos-container .main-title {
+  /* Alineado a la derecha usando margen automático a la izquierda */
+  width: 90%;
+  max-width: 1566px;
+  color: #ffffff;
+  font-size: 7vh; /* Pedido explícitamente */
+  font-weight: 700;
+  margin-top: 10vh;
+  margin-bottom: 2vh;
+  text-align: right;
+}
+
+/* --- Estilos de Tarjetas (Contenedores) --- */
+.project-group {
+  position: relative;
+  width: 90%; /* Responsive: ocupa el 90% del ancho de pantalla */
+  max-width: 1566px; /* Tope máximo basado en tu diseño original */
+  /* Mantiene la relación de aspecto original (1566/316) aprox 5/1 */
+  aspect-ratio: 1566 / 316; 
+  margin-bottom: 2vh;
+}
+
+/* En móbiles, dejamos que la altura sea automática para que entre el texto */
+@media (max-width: 768px) {
+ .project-group {
+    aspect-ratio: auto;
+    height: auto;
+    min-height: 316px;
+    padding-bottom: 20px;
+  }
+}
+
+.card-background {
+  width: 100%;
+  height: 100%;
+  background: white;
+  border-radius: 35px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.project-description {
+  width: 45%; /* Calculado: 719px / 1566px aprox 45% */
+  position: absolute;
+  right: 5%; /* Posicionado a la derecha relativo a la tarjeta */
+  top: 16%;  /* Calculado: 58px / 316px aprox 18% */
+  color: black;
+  /* Usamos clamp para que la letra no sea gigante ni diminuta */
+  font-size: clamp(16px, 2.5vw, 40px); 
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.2;
+}
+.pastitic-group .project-description{
+  top: 9%;
+}
+
+.vertical-line {
+  width: 15vw;
+  height: 6px; /* Espesor real para permitir borde redondeado */
+  border-radius: 3px; /* Redondeado completo */
+  transform: rotate(90deg);
+  transform-origin: top left;
+  position: absolute;
+}
+
+/* --- Grupo SignAI --- */
+/* Foto Link Container (SignAI) */
+.foto-link-container {
+  width: 37.5%; /* Calculado: 586px / 1566px */
+  height: 80%;  /* Calculado: 252px / 316px */
+  position: absolute;
+  left: 3.7%;   /* Calculado: 58px / 1566px */
+  top: 10%;     /* Centrado verticalmente aprox */
+}
+
+.line-orange {
+  left: 112%;
+  background-color: #FF7A00; /* Color de fondo en lugar de outline */
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  cursor: pointer; /* Indica que es clickeable */
+  transition: transform 0.2s;
+}
+
+.project-image:hover {
+  transform: scale(1.02);
+}
+
+/* Link Wrapper */
+.link-wrapper {
+  position: absolute;
+  right: 0%;
+  bottom: 10%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 2;
+}
+
+.link-text {
+  color: #3C3C3C;
+  font-size: clamp(14px, 1.2vw, 20px);
+  font-weight: 400;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.link-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- Grupo Pastitic --- */
+.project-image-pastitic {
+  width: 31%; /* Calculado: 487px / 1566px */
+  height: auto;
+  position: absolute;
+  left: 6.8%; /* 107px / 1566px */
+  top: 23%;
+}
+
+.line-blue {
+  left: 45.8%;
+  top: 9%;
+  background-color: #3201BF; /* Color de fondo en lugar de outline */
+}
+
+/* --- Contacto y Footer --- */
+.contact-section {
+  width: 100%;
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.contact-title {
+  font-size: clamp(30px, 4vw, 62px);
+  font-weight: 700;
+  margin-bottom: 2vh;
+}
+
+.social-icons-frame {
+  display: inline-flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 4vh;
+}
+
+/* Iconos Reales */
+.social-icon {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  transition: transform 0.2s;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-line {
+  width: 220px;
+  height: 1px;
+  background: white;
+}
+
+.copyright {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  padding: 0 10px;
+}

@@ -409,12 +409,29 @@
   white-space: nowrap;
 }
 
-.slide .frame-2 {
-  height: 2.4rem;
-  left: 45.47rem;
+.slide .social-links-container {
   position: absolute;
+  left: 45.47rem;
   top: 263.75rem;
-  width: 9.17rem;
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.slide .social-link {
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.slide .social-link:hover {
+  transform: scale(1.1);
+}
+
+.slide .social-link img {
+  height: 2rem;
+  width: auto;
 }
 
 .slide .text-wrapper-12 {

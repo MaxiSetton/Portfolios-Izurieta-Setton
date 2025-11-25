@@ -4,9 +4,9 @@ import "./sobre_mi.css";
 export const Sobre_mi = () => {
   return (
     <div className="frame">
-      <img className="element" alt="Element" src="conferencia.jpg" />
-
-      <div className="text-wrapper">Sobre mí</div>
+      <img className="element" alt="Element" src="conferencia.png" />
+      <div className='text-sobre-mi'>
+        <div className="text-wrapper">Sobre mí</div>
 
       <p className="me-llamo-maximiliano">
         <span className="span">
@@ -44,6 +44,8 @@ export const Sobre_mi = () => {
 
         <span className="span"> a los demás.</span>
       </p>
-    </div>
+
+      </div>
+          </div>
   );
 };

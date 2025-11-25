@@ -53,49 +53,75 @@ const educationData = [
   // Puedes agregar más elementos aquí para probar el scroll
 ];
 
-const EducationCard = ({ item }) => {
-  // Renderizado condicional basado en el "tipo" de tarjeta para mantener tus estilos originales
+const EducationCard = ({ item, isCenter }) => {
   
-  if (item.type === 'honor') {
+  // 1. Normalizamos los datos para evitar errores
+  // Si existe subtitle lo usa, si no, usa institution.
+  const displaySubtitle = item.subtitle || item.institution;
+  // La descripción adicional (ej: Ingeniería en IA)
+  const displayDescription = item.description;
+
+  // --- DISEÑO CENTRAL (GIGANTE) ---
+  if (isCenter) {
     return (
       <div className="card-container honor-card">
         <div className="image-wrapper-large">
-          <img src={item.image} alt={item.institution} className="image-large" />
+          <img 
+            src={item.image} 
+            alt={item.title} 
+            className="image-large" 
+          />
         </div>
         <b className="card-title">{item.title}</b>
-        <div className="card-subtitle-large">{item.institution}</div>
+        
+        {/* Aquí mostramos SIEMPRE la institución/subtítulo */}
+        <div className="card-subtitle-large">{displaySubtitle}</div>
+        
+        {displayDescription && (
+            <div className="card-text-block" style={{marginTop: '5px', fontSize: '28px', color:'#4a4a4a', fontWeight:600}}>
+                {displayDescription}
+            </div>
+        )}
       </div>
     );
   }
 
-  if (item.type === 'future') {
+  // --- DISEÑO LATERAL (PEQUEÑO) ---
+  
+  // Definimos la imagen pequeña según si es 'future' (con borde) o normal
+  const SideImage = () => {
+    if (item.type === 'future') {
+       return (
+         <div className="ellipse-parent">
+           <img src={item.image} alt={displaySubtitle} className="image-inset" />
+         </div>
+       );
+    }
     return (
-      <div className="card-container">
-        <div className="ellipse-parent">
-          <img src={item.image} alt={item.subtitle} className="image-inset" />
-        </div>
-        <b className="card-title">{item.title}</b>
-        <div className="card-text-block">
-          {item.subtitle}
-          <br />
-          {item.description}
-        </div>
-      </div>
+       <div className="image-wrapper-standard">
+         <img src={item.image} alt={displaySubtitle} className="image-standard" />
+       </div>
     );
-  }
+  };
 
-  // Standard card
   return (
     <div className="card-container">
-      <div className="image-wrapper-standard">
-        <img src={item.image} alt={item.subtitle} className="image-standard" />
-      </div>
+      <SideImage />
+      
       <b className="card-title">{item.title}</b>
-      <div className="card-subtitle">{item.subtitle}</div>
+      
+      <div className="card-subtitle">
+        {displaySubtitle}
+      </div>
+      {displayDescription && (
+        <div className="card-subtitle" style={{ fontSize: '20px', marginTop: '5px', color: '#4a4a4a' }}>
+            {displayDescription}
+        </div>
+      )}
+      
     </div>
   );
 };
-
 const skills = [
   { title: "Líder positivo", iconSrc: 'groups.svg', color: "#d7d7d7" },
   { title: "Trabajo en equipo", iconSrc: 'Users.svg', color: "#d9d9d9" },
@@ -113,15 +139,20 @@ export const Blandas_educacion = () => {
   const prevIndex = (centerIndex - 1 + len) % len;
   const nextIndex = (centerIndex + 1) % len;
 
-  // arreglo en orden: [izquierda, centro, derecha]
-  const arranged = [prevIndex, centerIndex, nextIndex];
+  // Arreglo ordenado de las 3 tarjetas visibles
+  const visibleItems = [
+    educationData[prevIndex],
+    educationData[centerIndex],
+    educationData[nextIndex]
+  ];
 
   const handlePrev = () => setCenterIndex((ci) => (ci - 1 + len) % len);
   const handleNext = () => setCenterIndex((ci) => (ci + 1) % len);
 
   return (
     <div className="group-72-1-parent">
-      <img className="group-72-1" alt="" src="gradient-blandas.png" />
+      <section className='blandas'>
+        <img className="group-72-1" alt="" src="gradient-blandas.png" />
 
       {/* HEADER */}
       <section className="header-container">
@@ -145,7 +176,6 @@ export const Blandas_educacion = () => {
           </div>
         </div>
       </section>
-
       {/* SECCIÓN DE TARJETAS */}
       <section className="cards-section-container">
         <div className="cards-grid">
@@ -163,35 +193,37 @@ export const Blandas_educacion = () => {
           ))}
         </div>
       </section>
+      </section>
 
-	<div className="education-section">
+      <div className="education-section">
+        <div className="mi-educacion">Mi educación</div>
 
-	<div className="mi-educacion">Mi educación</div>
+        <div className="carousel-wrapper">
+          {/* Botón Izquierda */}
+          <button className="nav-button" onClick={handlePrev} aria-label="Anterior">
+            <img src='Izquierda.svg' alt="Anterior" />
+          </button>
 
-	<div className="carousel-wrapper">
-	{/* Botón Izquierda */}
-	<button className="nav-button" onClick={handlePrev} aria-label="Anterior">
-		<img src='Izquierda.svg'/>
-	</button>
+          {/* Área visible */}
+          <div className="carousel-track-container">
+            <div className="carousel-track">
+              {/* MODIFICAMOS EL MAPEO AQUÍ */}
+              {visibleItems.map((item, index) => (
+                 // Usamos el índice 'index' para saber cuál es la del centro (la 1)
+                <div key={item.id} className={`anim-wrapper ${index === 1 ? 'is-center-wrapper' : ''}`}>
+                   {/* Pasamos la prop isCenter={index === 1} */}
+                  <EducationCard item={item} isCenter={index === 1} />
+                </div>
+              ))}
+            </div>
+          </div>
 
-	{/* Área visible */}
-	<div className="carousel-track-container">
-		<div 
-		className="carousel-track"
-		>
-		{educationData.map((item) => (
-			<EducationCard key={item.id} item={item} />
-		))}
-		</div>
-	</div>
-
-	{/* Botón Derecha */}
-	<button className="nav-button" onClick={handleNext} aria-label="Siguiente">
-		<img src='Derecha.svg'/>
-	</button>
-	</div>
-</div>
+          {/* Botón Derecha */}
+          <button className="nav-button" onClick={handleNext} aria-label="Siguiente">
+            <img src='Derecha.svg' alt="Siguiente" />
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
-
