@@ -47,7 +47,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap:  6vh 6% ;
-    width: clamp(300px, 75%, 950px);     
+    width: clamp(300px, 75%, 800px);     
 }
 
 
